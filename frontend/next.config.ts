@@ -9,7 +9,13 @@ const nextConfig: NextConfig = {
         port: "5000",
         pathname: "/uploads/**",
       },
+      {
+        protocol: "https",
+        hostname: "hostel-management-771i.onrender.com",
+        pathname: "/uploads/**",
+      },
     ],
+
   },
 };
 
