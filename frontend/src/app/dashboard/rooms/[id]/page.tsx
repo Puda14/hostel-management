@@ -679,7 +679,7 @@ export default function RoomDetailPage() {
             <div className="grid grid-cols-2 gap-3">
               <div>
                 <Label className="text-xs">Tháng</Label>
-                <Select value={utilMonth} onValueChange={setUtilMonth}>
+                <Select value={utilMonth} onValueChange={(val) => setUtilMonth(val || "")}>
                   <SelectTrigger className="mt-1">
                     <SelectValue>{`Tháng ${utilMonth}`}</SelectValue>
                   </SelectTrigger>
@@ -694,7 +694,7 @@ export default function RoomDetailPage() {
               </div>
               <div>
                 <Label className="text-xs">Năm</Label>
-                <Select value={utilYear} onValueChange={setUtilYear}>
+                <Select value={utilYear} onValueChange={(val) => setUtilYear(val || "")}>
                   <SelectTrigger className="mt-1">
                     <SelectValue>{`Năm ${utilYear}`}</SelectValue>
                   </SelectTrigger>

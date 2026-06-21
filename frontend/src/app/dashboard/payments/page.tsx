@@ -128,7 +128,7 @@ export default function PaymentsPage() {
       <div className="flex gap-3 items-end">
         <div>
           <Label className="text-xs text-gray-500">Tháng</Label>
-          <Select value={month} onValueChange={setMonth}>
+          <Select value={month} onValueChange={(val) => setMonth(val || "")}>
             <SelectTrigger className="w-32 mt-1">
               <SelectValue>{`Tháng ${month}`}</SelectValue>
             </SelectTrigger>
@@ -143,7 +143,7 @@ export default function PaymentsPage() {
         </div>
         <div>
           <Label className="text-xs text-gray-500">Năm</Label>
-          <Select value={year} onValueChange={setYear}>
+          <Select value={year} onValueChange={(val) => setYear(val || "")}>
             <SelectTrigger className="w-28 mt-1">
               <SelectValue>{`Năm ${year}`}</SelectValue>
             </SelectTrigger>

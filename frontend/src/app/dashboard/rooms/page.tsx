@@ -310,7 +310,7 @@ export default function RoomsPage() {
                 <Label htmlFor="status">Trạng thái</Label>
                 <Select
                   value={formData.status}
-                  onValueChange={(val) => setFormData({ ...formData, status: val })}
+                  onValueChange={(val) => setFormData({ ...formData, status: val || "available" })}
                 >
                   <SelectTrigger className="mt-1">
                     <SelectValue>{getStatusLabel(formData.status)}</SelectValue>
